@@ -1,5 +1,8 @@
 #include "stats.h"
 
+#include "ledAlerter.h"
+#include "ledAlerter.h"
+
 #include "gtest/gtest.h"
 #include <stdlib.h>
 #include <math.h>
