@@ -24,6 +24,9 @@ TEST(Statistics, AverageNaNForEmpty) {
     
     //Design the EXPECT statement here.
     //Use https://stackoverflow.com/questions/1923837/how-to-use-nan-and-inf-in-c
+    EXPECT_LT(computedStats.average, NAN);
+    EXPECT_LT(computedStats.max, NAN);
+    EXPECT_LT(computedStats.min, NAN);
 }
 
 int emailAlertCallCount = 0;
