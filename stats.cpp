@@ -4,8 +4,6 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     struct Stats s;
     int counter = 0;
     float sum = 0;
-    float min = numberset[counter];
-    float max = numberset[counter];
 
     s.average = 0;
     s.min = 0;
@@ -13,6 +11,9 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
 
     if (numberset != NULL && setlength != 0)
     {
+        float min = numberset[counter];
+        float max = numberset[counter];
+
         for (counter = 0; counter < setlength; counter++)
         {
             sum += numberset[counter];
