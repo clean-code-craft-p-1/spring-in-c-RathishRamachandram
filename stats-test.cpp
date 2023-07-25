@@ -1,7 +1,7 @@
 #include "stats.h"
 
 #include "ledAlerter.h"
-#include "ledAlerter.h"
+#include "emailAlerter.h"
 
 #include "gtest/gtest.h"
 #include <stdlib.h>
