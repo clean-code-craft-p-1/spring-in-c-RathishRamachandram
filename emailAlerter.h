@@ -1,4 +1,3 @@
-#ifndef _EMAIL_ALERT_
 #define _EMAIL_ALERT_
 #ifdef __cplusplus
 extern "C" {
@@ -6,5 +5,4 @@ extern "C" {
 	void emailAlerter();
 #ifdef __cplusplus
 	}
-#endif
 #endif
