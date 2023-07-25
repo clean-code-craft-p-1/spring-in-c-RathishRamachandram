@@ -13,7 +13,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
 
     if (numberset != NULL && setlength != 0)
     {
-        for (counter = 0; counter < setlength; cout++)
+        for (counter = 0; counter < setlength; counter++)
         {
             sum += numberset[counter];
 
@@ -32,7 +32,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
         s.min = min;
         s.max = max;
     }
-    esle
+    else
     {
         s.average = NAN;
         s.min = NAN;

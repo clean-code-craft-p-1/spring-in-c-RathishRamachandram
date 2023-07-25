@@ -3,7 +3,12 @@
 
 #include <math.h>
 // define the Stats structure here. See the tests to infer its properties
-
+struct Stats
+{
+    float average;
+    float min;
+    float max;
+};
 struct Stats compute_statistics(const float* numberset, int setlength);
 
 typedef void (*alerter_funcptr)();
