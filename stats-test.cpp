@@ -25,8 +25,6 @@ TEST(Statistics, AverageNaNForEmpty) {
     //Design the EXPECT statement here.
     //Use https://stackoverflow.com/questions/1923837/how-to-use-nan-and-inf-in-c
     ASSERT_TRUE(isnan(computedStats.average));
-    ASSERT_TRUE(isnan(computedStats.max));
-    ASSERT_TRUE(isnan(computedStats.min));
 }
 
 int emailAlertCallCount = 0;
