@@ -35,9 +35,9 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     }
     else
     {
-        s.average = nanf;
-        s.min = nanf;
-        s.max = nanf;
+        s.average = nan;
+        s.min = nan;
+        s.max = nan;
     }
 
     return s;
