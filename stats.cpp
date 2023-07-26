@@ -35,7 +35,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     }
     else
     {
-        s.average = nan;
+        s.average = NAN;
     }
 
     return s;
