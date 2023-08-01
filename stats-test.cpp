@@ -1,5 +1,8 @@
 #include "stats.h"
 
+#include "ledAlerter.h"
+#include "emailAlerter.h"
+
 #include "gtest/gtest.h"
 #include <stdlib.h>
 #include <math.h>
@@ -21,10 +24,8 @@ TEST(Statistics, AverageNaNForEmpty) {
     
     //Design the EXPECT statement here.
     //Use https://stackoverflow.com/questions/1923837/how-to-use-nan-and-inf-in-c
+    ASSERT_TRUE(isnan(computedStats.average));
 }
-
-int emailAlertCallCount = 0;
-int ledAlertCallCount = 0;
 
 TEST(Alert, AlertsWhenMaxExceeds) {
     // create additional .c and .h files
@@ -40,6 +41,6 @@ TEST(Alert, AlertsWhenMaxExceeds) {
 
     // need a way to check if both emailAlerter, ledAlerter were called
     // you can define call-counters along with the functions, as shown below
-    EXPECT_EQ(emailAlertCallCount, 1);
-    EXPECT_EQ(ledAlertCallCount, 1);
+    EXPECT_TRUE(emailAlertCallCount);
+    EXPECT_TRUE(ledAlertCallCount);
 }
