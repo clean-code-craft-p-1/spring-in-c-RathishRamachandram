@@ -1,6 +1,6 @@
 #define _LED_ALERT_
 #ifdef __cplusplus
-static int ledAlertCallCount = 0;
+extern int ledAlertCallCount;
 
 extern "C" {
 #endif
