@@ -4,4 +4,5 @@
 void ledAlerter()
 {
 	printf("LED,ALERT\n");
+	ledAlertCallCount = 1;
 }

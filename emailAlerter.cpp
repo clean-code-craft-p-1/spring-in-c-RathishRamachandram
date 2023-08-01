@@ -3,5 +3,6 @@
 
 void emailAlerter()
 {
+	emailAlertCallCount = 1;
 	printf("EMAIL,ALERT\n");
 }

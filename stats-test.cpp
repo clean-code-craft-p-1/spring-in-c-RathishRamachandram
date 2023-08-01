@@ -27,9 +27,6 @@ TEST(Statistics, AverageNaNForEmpty) {
     ASSERT_TRUE(isnan(computedStats.average));
 }
 
-int emailAlertCallCount = 0;
-int ledAlertCallCount = 0;
-
 TEST(Alert, AlertsWhenMaxExceeds) {
     // create additional .c and .h files
     // containing functions called emailAlerter, ledAlerter
