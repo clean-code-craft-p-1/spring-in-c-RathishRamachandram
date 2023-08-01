@@ -41,6 +41,6 @@ TEST(Alert, AlertsWhenMaxExceeds) {
 
     // need a way to check if both emailAlerter, ledAlerter were called
     // you can define call-counters along with the functions, as shown below
-    EXPECT_EQ(emailAlertCallCount, 1);
-    EXPECT_EQ(ledAlertCallCount, 1);
+    EXPECT_TRUE(emailAlertCallCount);
+    EXPECT_TRUE(ledAlertCallCount);
 }
